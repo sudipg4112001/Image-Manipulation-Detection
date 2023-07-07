@@ -67,7 +67,7 @@ Whereas, the aim of this task is to categorize 'copy-moved' and 'spliced' images
 
 The dataset includes both training and test data. However, a portion of the training data, specifically 20%, is separated and utilized as a validation set. Hence, the split comes as 2390, 598 and 332 for train, validation and test data respectively. 
 
-The model architecture incorporates InceptionResNetV2 as the backbone with imagenet weights. This is succeeded by a BatchNormalization layer, a Dense layer(D1), a Dropout layer, and another Dense layer with the number of classes as its output.
+The model architecture incorporates InceptionResNetV2 as the backbone with imagenet weights with input dimension of 224x224x3, where 224x224 signifies the image dimension and 3 signifies the image texture(3 represents RGB). This is succeeded by a BatchNormalization layer, a Dense layer(D1), a Dropout layer, and another Dense layer with the number of classes as its output.
 
 - BatchNormalization Layer is introduced to speed up the training process and reduce chances of weight decay.
     * axis: The axis parameter determines the axis along which the normalization is applied. In this case, axis=-1 indicates that normalization is performed along the last axis, which typically corresponds to the features or channels in an image. By normalizing along this axis, each feature/channel is independently normalized.
