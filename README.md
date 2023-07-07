@@ -105,8 +105,17 @@ The model architecture incorporates InceptionResNetV2 as the backbone with image
 All these addittional parameters have been used for the callback function.
 
 <p align="center">
-  <img src="https://github.com/sudipg4112001/Image-Manipulation-Detection/assets/60208804/03b2954f-16f7-4c08-86f6-7cef44ecf1f9" alt="Image" width="400">
+  <img src="https://github.com/sudipg4112001/Image-Manipulation-Detection/assets/60208804/03b2954f-16f7-4c08-86f6-7cef44ecf1f9" alt="Image" width="260">
 </p>
+Throughout the entire training process, the following parameters are taken into account for each epoch:
+
+- LR (Learning Rate)
+- Next LR (Next Learning Rate)
+- Monitor
+- Percentage Improvement (% Improv)
+- Duration
+
+The user sets the initial learning rate, which is then adjusted based on the monitored parameter. Initially, accuracy is monitored until it reaches 97%, after which val_loss is monitored. If the improvement percentage in the monitored parameter saturates or worsens (monitored for up to 5 epochs), the learning rate is reduced by a factor of 0.3. If this trend continues for 10 epochs, the training is halted.
 
 # Result
 
