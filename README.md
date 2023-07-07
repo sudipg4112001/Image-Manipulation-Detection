@@ -143,4 +143,4 @@ The user sets the initial learning rate, which is then adjusted based on the mon
 
 ### Confusion Matrix
 
-<img src="https://github.com/sudipg4112001/Image-Manipulation-Detection/assets/60208804/49f1b750-6f95-48aa-a241-2be8b6f3a6f1" alt="Image" width="600" height="400">
+<img src="https://github.com/sudipg4112001/Image-Manipulation-Detection/assets/60208804/49f1b750-6f95-48aa-a241-2be8b6f3a6f1" alt="Image" width="500" height="400">
